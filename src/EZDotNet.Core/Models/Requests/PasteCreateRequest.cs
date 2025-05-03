@@ -9,16 +9,16 @@ namespace EZDotNet.Core.Models.Requests;
 public class PasteCreateRequest
 {
     /// <summary>
-    /// The title of the paste. Optional.
+    /// The title of the paste.
     /// </summary>
     [JsonPropertyName("title")]
-    public string? Title { get; set; }
+    public required string Title { get; set; }
     
     /// <summary>
-    /// A description of the paste. Optional.
+    /// A description of the paste.
     /// </summary>
     [JsonPropertyName("description")]
-    public string? Description { get; set; }
+    public required string Description { get; set; }
     
     /// <summary>
     /// The content of the paste.

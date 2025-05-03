@@ -7,8 +7,8 @@ namespace EZDotNet.Cli.Commands;
 
 public class PasteCommand : CommandBase
 {
-    private readonly Option<string> _titleOption = new("--title", "Title of the paste");
-    private readonly Option<string> _descriptionOption = new("--description", "Description of the paste");
+    private readonly Option<string> _titleOption = new("--title", "Title of the paste") { IsRequired = true };
+    private readonly Option<string> _descriptionOption = new("--description", "Description of the paste") { IsRequired = true };
     private readonly Option<string> _textOption = new("--text", "Content of the paste") { IsRequired = true };
     private readonly Option<PasteLanguage> _languageOption = new(
         "--language",
@@ -28,8 +28,8 @@ public class PasteCommand : CommandBase
     private async Task HandleCommandAsync(InvocationContext context)
     {
         var apiKey = context.ParseResult.GetValueForOption(ApiKeyOption)!;
-        var title = context.ParseResult.GetValueForOption(_titleOption);
-        var description = context.ParseResult.GetValueForOption(_descriptionOption);
+        var title = context.ParseResult.GetValueForOption(_titleOption)!;
+        var description = context.ParseResult.GetValueForOption(_descriptionOption)!;
         var text = context.ParseResult.GetValueForOption(_textOption)!;
         var language = context.ParseResult.GetValueForOption(_languageOption);
 
