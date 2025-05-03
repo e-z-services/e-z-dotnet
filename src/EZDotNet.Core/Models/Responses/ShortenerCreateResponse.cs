@@ -16,7 +16,7 @@ public class ShortenerCreateResponse
     /// <summary>
     /// The shortened URL.
     /// </summary>
-    [JsonPropertyName("shortendUrl")] // This is still mispelled in the API response.
+    [JsonPropertyName("shortendUrl")] // This is still misspelled in the API response.
     public required string ShortenedUrl { get; set; }
     
     /// <summary>
