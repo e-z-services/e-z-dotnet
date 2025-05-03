@@ -4,7 +4,24 @@
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+
+        <PackageId>EZDotNet.Core</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Nathan</Authors>
+        <Company>e-z-services</Company>
+        <Description>A .NET client library for interacting with e-z.host services api</Description>
+        <PackageTags>e-z.host;file-upload;api-client;paste;shortener</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <PackageProjectUrl>https://github.com/e-z-services/e-z-dotnet</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/e-z-services/e-z-dotnet</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../../README.md" Pack="true" PackagePath="/" />
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Refit" Version="8.0.0" />
