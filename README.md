@@ -17,8 +17,12 @@ A .NET library for interacting with the e-z.host API service.
 
 ## Installation
 
+```
 dotnet add package EZDotNet.Core
+```
+```
 dotnet add package EZDotNet.Services
+```
 
 ## Quick Start
 
