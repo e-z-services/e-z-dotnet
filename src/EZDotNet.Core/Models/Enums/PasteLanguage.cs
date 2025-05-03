@@ -2,6 +2,9 @@ using System.Text.Json.Serialization;
 
 namespace EZDotNet.Core.Models.Enums;
 
+/// <summary>
+/// Supported programming languages for paste syntax highlighting.
+/// </summary>
 [JsonConverter(typeof(JsonStringEnumConverter))]
 public enum PasteLanguage
 {

@@ -5,7 +5,7 @@ namespace EZDotNet.Cli.Commands;
 
 public abstract class CommandBase : Command
 {
-    protected readonly Option<string> ApiKeyOption = new("--api-key", "Your e-z.host API key") { IsRequired = true };
+    protected readonly Option<string> ApiKeyOption = new("--api-key", "Your https://e-z.host API key") { IsRequired = true };
 
     protected CommandBase(string name, string description) : base(name, description)
     {

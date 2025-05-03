@@ -7,7 +7,7 @@ internal class Program
 {
     private static async Task<int> Main(string[] args)
     {
-        var rootCommand = new RootCommand("e-z.host CLI tool for file uploads, URL shortening, and creating pastes");
+        var rootCommand = new RootCommand("https://e-z.host CLI tool for file uploads, URL shortening, and creating pastes");
 
         rootCommand.AddCommand(new PasteCommand());
         rootCommand.AddCommand(new UploadCommand());

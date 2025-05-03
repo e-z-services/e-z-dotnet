@@ -2,14 +2,26 @@ using System.Text.Json.Serialization;
 
 namespace EZDotNet.Core.Models.Responses;
 
+/// <summary>
+/// Represents the response received after creating a shortened URL.
+/// </summary>
 public class ShortenerCreateResponse
 {
+    /// <summary>
+    /// Indicates whether the URL shortening was successful.
+    /// </summary>
     [JsonPropertyName("success")]
-    public bool Success { get; set; }
+    public required bool Success { get; set; }
     
-    [JsonPropertyName("shortendUrl")] // This is a misspelt word in the API
+    /// <summary>
+    /// The shortened URL.
+    /// </summary>
+    [JsonPropertyName("shortenedUrl")]
     public required string ShortenedUrl { get; set; }
     
+    /// <summary>
+    /// The URL that can be used to delete the shortened URL.
+    /// </summary>
     [JsonPropertyName("deletionUrl")]
     public required string DeletionUrl { get; set; }
 }

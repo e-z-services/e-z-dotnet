@@ -8,6 +8,12 @@ namespace EZDotNet.Services.Extension;
 
 public static class ServiceCollectionExtensions
 {
+    /// <summary>
+    /// Adds https://e-z.host services to the service collection.
+    /// </summary>
+    /// <param name="services">The service collection to add to.</param>
+    /// <param name="configureOptions">The configuration options for https://e-z.host services.</param>
+    /// <returns>The service collection for chaining.</returns>
     public static IServiceCollection AddEZServices(
         this IServiceCollection services,
         Action<EZServicesOptions> configureOptions)

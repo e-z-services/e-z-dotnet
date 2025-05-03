@@ -6,8 +6,18 @@ namespace EZDotNet.Core.Extensions;
 
 using System.Net.Http.Headers;
 
+/// <summary>
+/// Extension methods for the file service interface.
+/// </summary>
 public static class FileServiceExtensions
 {
+    /// <summary>
+    /// Uploads a file from the specified file path.
+    /// </summary>
+    /// <param name="fileService">The file service instance.</param>
+    /// <param name="filePath">The path to the file to upload.</param>
+    /// <returns>A response containing the upload result and file URLs.</returns>
+    /// <exception cref="FileNotFoundException">Thrown when the specified file does not exist.</exception>
     public static async Task<ApiResponse<FileUploadResponse>> UploadFileFromPathAsync(
         this IFileService fileService,
         string filePath)
