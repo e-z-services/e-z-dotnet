@@ -71,5 +71,5 @@ var pasteResponse = await client.Paste.CreatePasteAsync(new PasteCreateRequest {
 
 ## Requirements
 
-- .NET 9.0+
+- .NET 7.0+
 - Valid e-z.host API key
