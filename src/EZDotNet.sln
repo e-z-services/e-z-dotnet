@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZDotNet.Core", "EZDotNet.Core\EZDotNet.Core.csproj", "{2AA27DB7-2E69-4BDA-9BE3-C20B55AB0748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZDotNet.Cli", "EZDotNet.Cli\EZDotNet.Cli.csproj", "{7AC91DB7-F4D7-49F1-9A6B-B83A2D8DCCAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZDotNet.Services", "EZDotNet.Services\EZDotNet.Services.csproj", "{FF438255-88B3-465D-B3B3-09775C2E7254}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AA27DB7-2E69-4BDA-9BE3-C20B55AB0748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AA27DB7-2E69-4BDA-9BE3-C20B55AB0748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AA27DB7-2E69-4BDA-9BE3-C20B55AB0748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AA27DB7-2E69-4BDA-9BE3-C20B55AB0748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC91DB7-F4D7-49F1-9A6B-B83A2D8DCCAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC91DB7-F4D7-49F1-9A6B-B83A2D8DCCAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC91DB7-F4D7-49F1-9A6B-B83A2D8DCCAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC91DB7-F4D7-49F1-9A6B-B83A2D8DCCAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF438255-88B3-465D-B3B3-09775C2E7254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF438255-88B3-465D-B3B3-09775C2E7254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF438255-88B3-465D-B3B3-09775C2E7254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF438255-88B3-465D-B3B3-09775C2E7254}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
