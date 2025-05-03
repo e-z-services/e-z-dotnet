@@ -17,8 +17,12 @@ A .NET library for interacting with the e-z.host API service.
 
 ## Installation
 
+```
 dotnet add package EZDotNet.Core
+```
+```
 dotnet add package EZDotNet.Services
+```
 
 ## Quick Start
 
@@ -72,5 +76,5 @@ var pasteResponse = await client.Paste.CreatePasteAsync(new PasteCreateRequest {
 
 ## Requirements
 
-- .NET 7.0+
+- .NET 8.0+
 - Valid e-z.host API key
