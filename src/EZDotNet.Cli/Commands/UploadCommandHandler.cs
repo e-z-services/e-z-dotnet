@@ -7,12 +7,10 @@ namespace EZDotNet.Cli.Commands;
 public class UploadCommand : CommandBase
 {
     private readonly Option<string?> _filePathOption = new("--file", "Path to the file to upload");
-    private readonly Option<bool> _pickFileOption = new("--pick", () => false, "Open file picker dialog to select file");
 
     public UploadCommand() : base("upload", "Upload a file")
     {
         AddOption(_filePathOption);
-        AddOption(_pickFileOption);
 
         this.SetHandler(HandleCommandAsync);
     }
@@ -28,7 +26,7 @@ public class UploadCommand : CommandBase
         {
             if (string.IsNullOrEmpty(filePath))
             {
-                Console.WriteLine("No file specified. Use --file or --pick to specify a file.");
+                Console.WriteLine("No file specified. Use --file to specify a file.");
                 return;
             }
 
